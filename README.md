@@ -27,10 +27,39 @@
 | 分步骤教程 `ugc-tutorial-flow` | 按真实顺序演示使用方法 |
 | 开箱与揭晓 `ugc-unboxing-flow` | 从密封包装到产品揭晓 |
 
-## 安装：下载、解压、安装到项目
+## 让智能体自动安装与加载
 
-1. 从 [Releases](https://github.com/zx75066/DX-ugc-workflows/releases/latest) 下载 `DX-ugc-workflows-v2.0.1.zip` 并解压。
-2. 准备一个自己的项目文件夹，在终端进入解压后的 `DX-ugc-workflows-v2.0.1` 目录。
+**不想自己操作终端，可以直接复制下面整段，发给具有项目文件访问和命令执行能力的智能体，例如 Codex。** 先在智能体中打开你要制作视频的项目文件夹；这段指令会让它完成下载、安装和检查。
+
+```text
+请帮我把 DX-ugc-workflows 安装到当前项目，并完成本地验证和加载。
+仓库：https://github.com/zx75066/DX-ugc-workflows
+
+请直接执行安装，而不是只给我操作教程：
+1. 确认当前项目根目录；如果尚未打开或指定项目，先问我安装到哪个文件夹。
+2. 获取仓库最新正式 Release 的完整 ZIP 和 SHA256SUMS.txt，核对 ZIP 校验值后解压到临时目录。先阅读包内 README.md 和 install.sh。
+3. 检查 Python 3.9+。macOS/Linux 在解压目录运行 bash verify-package.sh，再运行 bash install.sh "项目绝对路径"。
+   Windows 使用可用的 Python 命令核对包内 SHA256SUMS.txt，完整复制 skill 目录到下面的目标位置；不要直接在 PowerShell 运行 Bash 脚本。
+4. 最终安装位置必须是：
+   <项目根目录>/.agents/skills/higgsfield-ugc-workflows/
+   该目录下直接包含 SKILL.md、agents、references、scripts、workflows，以及六条子流程。保留 higgsfield-ugc-workflows 这个内部名称。
+5. 如果已安装且内容相同，跳过重复复制；如果版本或内容不同，先备份旧目录到项目 .agents/skill-backups/ 下，再更新。macOS/Linux 可以使用安装器的 --replace；保留原有其他 Skills。
+6. 从项目根目录运行以下检查（Windows 根据环境将 python3 替换为 python 或 py -3）：
+   python3 .agents/skills/higgsfield-ugc-workflows/scripts/local_workflow_registry.py catalog
+   python3 .agents/skills/higgsfield-ugc-workflows/scripts/check_mode_contracts.py
+   必须确认列出六条工作流，且模式检查 valid 为 true、errors 为空。
+7. 读取已安装的 SKILL.md，确认包含 reference-only-prompt、soul-only-prompt、full-render 三种模式。如果当前智能体支持原生 Skill 发现，尝试发现 $higgsfield-ugc-workflows；如果需要新一轮对话、重新打开项目或重启应用，请说明实际下一步。若当前智能体不支持这种 Skill 格式，请说明兼容性限制，不能把文件复制成功说成已原生加载。
+8. 最后告诉我安装绝对路径、版本、验证结果、加载状态，以及三个模式各需要什么。缺少 Python 或其他条件时，说明具体阻碍及下一步。
+
+本次任务只安装和检查 Skill。不开始制作内容，不上传素材，不调用付费生成，也不修改全局配置。MCP 尚未配置时说明即可，零积分模式不依赖 Higgsfield MCP。
+```
+
+安装完成后，在目标项目中开始新一轮对话，使用下方三个模式的示例。仓库名是 `DX-ugc-workflows`，实际调用名是 `$higgsfield-ugc-workflows`。其他智能体能否自动发现此 Skill，取决于其兼容性。
+
+## 手动安装：下载、解压、安装到项目
+
+1. 从 [Releases](https://github.com/zx75066/DX-ugc-workflows/releases/latest) 下载 `DX-ugc-workflows-v2.0.2.zip` 并解压。
+2. 准备一个自己的项目文件夹，在终端进入解压后的 `DX-ugc-workflows-v2.0.2` 目录。
 3. macOS / Linux 运行下列命令，将示例路径换成你的真实项目路径：
 
 ```bash
