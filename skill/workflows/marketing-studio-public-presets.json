@@ -1,0 +1,147 @@
+{
+  "captured_at": "2026-07-29",
+  "source": "Higgsfield MCP show_marketing_studio read-only preset listing",
+  "scope": "Marketing Studio UGC prompt building blocks only",
+  "hooks": [
+    {
+      "name": "Product Hit",
+      "type": "stunt",
+      "source": "preset",
+      "prompt": "Object flies into frame, hits subject. Brief reaction → pivot to product."
+    },
+    {
+      "name": "Spicy",
+      "type": "subtle",
+      "source": "preset",
+      "prompt": "The shot starts with an extreme close-up of a collarbone, slowly tilts up to reveal a flawless makeup look, then pulls back into selfie framing before a silent pause leads into the product pitch."
+    },
+    {
+      "name": "Interview",
+      "type": "subtle",
+      "source": "preset",
+      "prompt": "Interviewer asks a second stranger a question based entirely on the first stranger's random answer; confusion builds until the second person naturally notices the product (Erewhon-style aspirational item) and pivots into a casual review."
+    },
+    {
+      "name": "Random Object Mic",
+      "type": "stunt",
+      "source": "preset",
+      "prompt": "During a casual vlog, a random absurd object falls into the person's hand from above, and they immediately use it as a microphone to continue a completely serious product review."
+    },
+    {
+      "name": "Product Crash",
+      "type": "subtle",
+      "source": "preset",
+      "prompt": "The product itself falls from above and destroyed, creating chaos; harsh sharpness leads to a perfectly clean and restored scene where a person calmly begins reviewing the product."
+    },
+    {
+      "name": "Blizzard",
+      "type": "stunt",
+      "source": "preset",
+      "prompt": "A cozy indoor scene is suddenly hit by a violent, impossible blizzard; chaos fills the room but the product remains intact and functioning, and once the storm stops, the product is still working."
+    },
+    {
+      "name": "Camera Bump",
+      "type": "subtle",
+      "source": "preset",
+      "prompt": "The camera operator accidentally bumps into a person, hitting their forehead; they react briefly, recover, and naturally reveal the dress (or product on it) while transitioning into a casual explanation."
+    },
+    {
+      "name": "Product Dodge",
+      "type": "stunt",
+      "source": "preset",
+      "prompt": "Suddenly, a product flies into a person's face; he quickly bends down to avoid a collision, and in the next frame he stands up straight and already holds the product in his hands and begins to review as if nothing had happened."
+    },
+    {
+      "name": "Epic Fail",
+      "type": "subtle",
+      "source": "preset",
+      "prompt": "A person performs an unsuccessful backflip, lands unsuccessfully, falls, and immediately, without pause, takes out the product and begins an unflappable review."
+    }
+  ],
+  "settings": [
+    {
+      "name": "Bedroom",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "On bed or propped against pillows, soft window light. Unmade bed, cozy textures. Relaxed morning or evening wind-down vibe — honest, low-effort feel."
+    },
+    {
+      "name": "Airplane Wing",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person sits on airplane wing mid-flight at altitude. Casual product review — powerful wind, clouds, engine roar."
+    },
+    {
+      "name": "Nature",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Outdoors — trail, park, beach, or garden depending on product. Natural light, greenery or open sky. Active or peaceful mood — setting adapts to product."
+    },
+    {
+      "name": "Roofing",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person on the edge of a skyscraper rooftop, city skyline stretched out behind, wind moving through hair, sun catching the buildings. Casual product review with the entire city below, character completely unbothered by the height — selfie camera, golden hour or dusk, urban scale visible in every direction."
+    },
+    {
+      "name": "Gym",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Gym floor, locker room, or post-workout bench. Bright overhead lighting, equipment in background. Sweaty or freshly finished energy — product tied to performance or recovery."
+    },
+    {
+      "name": "Volcano Rim",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person sits on active volcano rim, lava below. Casual product review — lava bubbles, smoke drifts through, zero reaction."
+    },
+    {
+      "name": "Bathroom",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Mirror selfie or front camera in bathroom. Ring light or vanity lighting, tiles visible. Intimate getting-ready energy — product shown mid-routine, close-up friendly."
+    },
+    {
+      "name": "Tiny Reviewer",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person shrunk to 15cm next to a product their full height. Normal selfie review at impossible scale — leans on it."
+    },
+    {
+      "name": "Kitchen",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Standing at counter or leaning on island, natural daylight. Clean surface, mug or fruit in background. Casual mid-day energy — product fits daily routine."
+    },
+    {
+      "name": "Car Roof",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person on roof of moving car, desert highway, golden hour. Product review while swaying with the road. Semi truck passes — no flinch."
+    },
+    {
+      "name": "In Car",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Selfie from passenger or driver seat, parked or cruising. Window light on face. Casual tone — talking to camera between errands."
+    },
+    {
+      "name": "Street",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Walking on sidewalk or standing on urban street, handheld selfie. City backdrop — storefronts, traffic, pedestrians. Energetic pace, talking while moving. Spontaneous discovery feel."
+    },
+    {
+      "name": "Office",
+      "type": "realistic",
+      "source": "preset",
+      "prompt": "Desk setup, laptop open, coffee nearby. Clean modern space, soft overhead or monitor glow. Hushed mid-workday tone — quick product mention squeezed between tasks."
+    },
+    {
+      "name": "Train Surf",
+      "type": "unrealistic",
+      "source": "preset",
+      "prompt": "Person hangs outside a moving train, filming selfie.  Reviews product — wind pressing on them is the live demo."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Skill card metadata for the marketplace sync. Docs + full template: src/skills/_example/ui.yaml
+
+display_name: "SaaS UGC Creator"
+sub_title: "Creator ad for your app — from just a URL"
+category: "content_creation"
+color: "#4C6EF5"
+example_prompt: "Make a UGC video for my SaaS — here's the link: https://myapp.com"

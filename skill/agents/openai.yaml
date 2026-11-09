@@ -1,0 +1,4 @@
+interface:
+  display_name: "Higgsfield UGC 工作流入口"
+  short_description: "路由六类 UGC，支持完整、低积分和双图零积分模式"
+  default_prompt: "使用 $higgsfield-ugc-workflows 根据现有素材选择正确 UGC 路由和执行模式。"
